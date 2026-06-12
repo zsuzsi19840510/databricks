@@ -4,7 +4,7 @@
 
 Nyisd meg a **SQL Warehouses** menüpontot és válaszd ki a használni kívánt warehouse-t.
 
-![SQL Warehouse](images/how_to_connect_03.png)
+![SQL Warehouse](images/how_to_connect_01.png)
 
 A példában a warehouse neve:
 
@@ -32,7 +32,7 @@ Innen szükséges kimásolni:
 
 A Java kapcsolat beállításainál kattints a **Generate new token** gombra.
 
-![Token létrehozása](images/how_to_connect_01.png)
+![Token létrehozása](images/how_to_connect_03.png)
 
 A generált tokent mentsd el, mert később a DataGrip kapcsolat jelszavaként fog szolgálni.
 
