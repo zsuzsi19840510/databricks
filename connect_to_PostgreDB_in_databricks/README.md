@@ -4,9 +4,9 @@ Ez a mappa rövid útmutatókat tartalmaz arról, hogyan lehet egy Neon PostgreS
 
 ## Tartalom
 
-* `neon_postgres_leiras.md` – PostgreSQL adatbázis és teszttábla létrehozása Neon-ban.
-* `databricks_neon_jdbc_leiras.md` – Kapcsolódás Neon PostgreSQL adatbázishoz Databricks notebookból JDBC használatával.
-* `databricks_postgresql_data_ingestion_leiras.md` – PostgreSQL adatforrás beállítása és Data Ingestion pipeline előkészítése Databricks-ben.
+* [neon_postgres_leiras.md](./neon_postgres_leiras.md) – PostgreSQL adatbázis és teszttábla létrehozása Neon-ban.
+* [databricks_neon_jdbc_leiras.md](./databricks_neon_jdbc_leiras.md) – Kapcsolódás Neon PostgreSQL adatbázishoz Databricks notebookból JDBC használatával.
+* [databricks_postgresql_data_ingestion_leiras.md](./databricks_postgresql_data_ingestion_leiras.md) – PostgreSQL adatforrás beállítása és Data Ingestion pipeline előkészítése Databricks-ben.
 
 ## Cél
 
@@ -17,5 +17,5 @@ A példák bemutatják, hogyan lehet külső PostgreSQL adatforrást összekapcs
 * Databricks
 * Neon PostgreSQL
 * JDBC
-* Spark DataFrame
+* Apache Spark
 * Databricks Data Ingestion
