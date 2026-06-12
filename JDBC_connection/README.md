@@ -1,3 +1,47 @@
+# Databricks JDBC kapcsolat DataGrip segítségével
+
+## Projekt célja
+
+A projekt bemutatja, hogyan lehet egy **Databricks SQL Warehouse**-hoz kapcsolódni **JetBrains DataGrip** segítségével JDBC kapcsolaton keresztül, majd SQL műveleteket végrehajtani a Databricks táblákon.
+
+A megvalósítás során:
+
+* SQL Warehouse létrehozása és használata
+* Personal Access Token generálása
+* JDBC kapcsolat konfigurálása
+* DataGrip kapcsolat beállítása
+* Catalog, Schema és Table struktúra böngészése
+* SQL lekérdezések futtatása
+* CRUD műveletek végrehajtása
+
+---
+
+## Architektúra
+
+```text
++------------------+
+|     DataGrip     |
++------------------+
+          |
+          | JDBC Driver
+          |
+          v
++------------------+
+| Databricks SQL   |
+| Warehouse        |
++------------------+
+          |
+          v
++------------------+
+| Unity Catalog    |
+| Catalogok        |
+| Sémák            |
+| Táblák           |
++------------------+
+```
+
+---
+
 # Databricks → DataGrip kapcsolat lépésről lépésre
 
 ## 1. SQL Warehouse kiválasztása
