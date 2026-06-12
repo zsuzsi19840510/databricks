@@ -119,6 +119,8 @@ Az **Add data** oldalon kiválasztottam a **PostgreSQL** connectort.
 
 Ezzel a Databricks már tudja, hogy melyik PostgreSQL adatforrásból kell adatokat beolvasnia.
 
+## 9. Kiválasztása, hogy melyik táblát töltsük át Neon űPostgreDB-ből Databricks melyik sémájába
+
 ## Összegzés
 
 Ebben a folyamatban létrehoztam egy PostgreSQL adatforrás kapcsolatot Databricks-ben, majd előkészítettem az adatbetöltést Data Ingestion pipeline használatával.
