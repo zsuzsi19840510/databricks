@@ -23,15 +23,8 @@ Ezután az elérhető Databricks connectorok között megkerestem a **PostgreSQL
 
 ![PostgreSQL connector kiválasztása](images/data_ingestion_01.png)
 
-## 2. PostgreSQL connector kiválasztása
 
-Az **Add data** oldalon kiválasztottam a **PostgreSQL** connectort.
-
-![Add data PostgreSQL connector](images/data_ingestion_06.png)
-
-A PostgreSQL connector jelenleg Preview állapotban látható.
-
-## 3. PostgreSQL adatforrás kapcsolat létrehozása
+## 2. PostgreSQL adatforrás kapcsolat létrehozása
 
 A PostgreSQL connector kiválasztása után megnyílt az **Ingest data from PostgreSQL** oldal.
 
@@ -41,7 +34,7 @@ A **Create connection** gombra kattintottam.
 
 ![Create connection gomb](images/data_ingestion_02.png)
 
-## 4. Kapcsolati adatok megadása
+## 3. Kapcsolati adatok megadása
 
 A megjelenő ablakban kitöltöttem a PostgreSQL kapcsolat adatait.
 
@@ -69,17 +62,16 @@ Ez a PostgreSQL alapértelmezett portja.
 
 ![PostgreSQL kapcsolat létrehozása](images/data_ingestion_03.png)
 
-A jelszót biztonsági okból nem érdemes dokumentációban vagy GitHub repository-ban megjeleníteni.
 
-## 5. Kapcsolat létrehozása
+
+## 4. Kapcsolat létrehozása
 
 Az adatok megadása után a **Create connection** gombra kattintottam.
 
 Ezzel létrejött a PostgreSQL kapcsolat Databricks-ben.
 
-![Kapcsolat létrehozása](images/data_ingestion_03.png)
 
-## 6. Létrehozott connection ellenőrzése
+## 5. Létrehozott connection ellenőrzése
 
 A kapcsolat létrehozása után visszakerültem az **Ingest data from PostgreSQL** oldalra.
 
@@ -97,7 +89,7 @@ zsuzsi1984@gmail.com
 
 ![Létrehozott PostgreSQL connection](images/data_ingestion_04.png)
 
-## 7. Ingestion pipeline indítása
+## 6. Ingestion pipeline indítása
 
 A Databricks bal oldali menüjében kiválasztottam a **Jobs & Pipelines** menüpontot.
 
@@ -107,13 +99,21 @@ Itt a **Create new** résznél kiválasztottam az **Ingestion pipeline** lehető
 
 Az Ingestion pipeline segítségével adatokat lehet beolvasni külső adatforrásokból, például adatbázisokból, fájlokból vagy alkalmazásokból.
 
-## 8. PostgreSQL kapcsolat kiválasztása ingestion-höz
+## 7. PostgreSQL kapcsolat kiválasztása ingestion-höz
 
 Az ingestion folyamatban a korábban létrehozott PostgreSQL connection kiválasztható volt:
 
 ```text
 neon_postgredb_connection
 ```
+
+## 8. PostgreSQL connector kiválasztása
+
+Az **Add data** oldalon kiválasztottam a **PostgreSQL** connectort.
+
+![Add data PostgreSQL connector](images/data_ingestion_06.png)
+
+
 
 ![PostgreSQL connection kiválasztása](images/data_ingestion_07.png)
 
@@ -133,31 +133,4 @@ A fő lépések:
 6. Ingestion pipeline létrehozása
 7. PostgreSQL connection kiválasztása az ingestion folyamathoz
 
-## GitHub mappastruktúra
 
-A dokumentációban szereplő képeket az `images` mappába érdemes elhelyezni.
-
-```text
-project-root/
-│
-├── README.md
-└── images/
-    ├── data_ingestion_01.png
-    ├── data_ingestion_02.png
-    ├── data_ingestion_03.png
-    ├── data_ingestion_04.png
-    ├── data_ingestion_05.png
-    ├── data_ingestion_06.png
-    └── data_ingestion_07.png
-```
-
-## Biztonsági megjegyzés
-
-GitHub repository-ba nem szabad feltölteni:
-
-- adatbázis jelszót
-- teljes connection stringet jelszóval
-- titkos kulcsokat
-- hozzáférési tokeneket
-
-Ezeket érdemes környezeti változóban, Databricks Secret-ben vagy más biztonságos secret management megoldásban tárolni.
